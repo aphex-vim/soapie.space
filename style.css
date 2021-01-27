@@ -1,0 +1,28 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:lightcyan
+}
+
+nav {
+    background-color:lightblue;
+    padding: .5em;
+}
+
+h1 {
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+main {
+    margin: auto;
+    max-width: 64em;
+    padding: 1em;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
