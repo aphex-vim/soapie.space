@@ -8,8 +8,8 @@ header, nav, section, main {
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
-    max-width: 70em;
     padding: 1em;
+    max-width: 70em;
 }
 
 header, nav {
@@ -18,8 +18,9 @@ header, nav {
 
 main {
     background-color: lightblue;
+    margin: auto;
     padding: 0%;
-    margin: 0%;
+    max-width: 72em;
 }
 
 footer {
