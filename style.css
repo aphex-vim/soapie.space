@@ -3,7 +3,7 @@ body {
     background-color:lightcyan;
 }
 
-header, nav, main, footer {
+header, nav, main {
     background-color:lightgoldenrodyellow;
     margin: auto;
     margin-top: .5em;
