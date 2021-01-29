@@ -12,8 +12,12 @@ header, nav, section, main {
     max-width: 70em;
 }
 
-header, nav {
+header, nav, footer, h2 {
     text-align: center;
+}
+
+header {
+    background-image: url("assets/banner.gif");
 }
 
 main {
