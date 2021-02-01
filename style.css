@@ -19,7 +19,7 @@ header, nav, footer {
 header {
     background-color: lightcyan;
     font-style: italic;
-    background-image: url("assets/banner.gif");
+    background-image: url("assets/banner.png");
     background-position: center bottom;
 }
 
