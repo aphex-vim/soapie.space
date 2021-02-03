@@ -21,6 +21,7 @@ header {
     font-style: italic;
     background-image: url("assets/banner.png");
     background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 main {
