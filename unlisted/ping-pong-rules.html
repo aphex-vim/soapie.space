@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Spencer Tenney (spencer-maaaaan on github)">
+        <meta name="description" content="Spencer's collection of cool projects.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="https://speen.space//assets/opengraph.png">
+        <meta property="og:image:alt" content="A small drawing of a computer.">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <title>speen's space</title>
+        <style>
+            body, main{
+                background-color: bisque;
+            }
+            
+            header, nav, section, footer {
+                background-color:beige;
+            }
+            section {
+                padding: .5em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+
+            ul {
+                list-style-type: square;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>ping's pong</h1>
+        </header>
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="https://github.com/spencer-maaaaan">Github</a> |
+            <a href="mailto:spencer.d.tenney@gmail.com">Email</a> |
+            <a href="../friends.html">Friends</a>
+        </nav>
+        <main>
+            <section>
+                <h2>ping pong</h2>
+                <p>The spring semester of 2021, Tony, Ory, and I made it a tradition to play ping pong after lunch 2-3 times a week. These are the rules that we decided on as a group</p>
+            </section>
+            <section>
+                <h2>win condition</h2>
+                <p>A winning score has two conditions:</p>
+                <ul>  
+                    <li>it must be greater than or equal to 11</li>
+                    <li>it must be at least 2 points greater than the opponent's score</li>
+                </ul>
+            </section>
+            <section>
+                <h2>serving</h2>
+                <p>The game starts with the first serve, you can alternate who serves first but it doesn't matter much. To serve, you drop/toss the ball and hit it onto your side of the table such that it passes over the net and hits your opponent's side. There is no limitation on how far you are from the table as long as the ball hits your side of the table, and then the opponent's. This means if you are really funny you can serve from across the room as a joke.</p>
+            </section>
+            <section>
+                <h2>scoring</h2>
+                <p>Only one point can be scored at a time. A point is awarded to a player when their opponent fails to "return" the ball. When the ball comes over the net and hits your side, it is ready to be returned. Returning the ball is as simple as hitting it such that it goes over the net and bounces off your opponent's side of the table. Given these rules, here are some common cases where you would be awarded a point:</p>
+                <ul>
+                    <li>Your opponent attempts to return the ball, but it hits the net and stops on their side</li>
+                    <li>Your opponent attempts to return the ball, but upon going over the net it does not hit your side of the table.</li>
+                    <li>You return the ball and it bounces two times on the your opponent's side.</li>
+                </ul>
+                <p>Sometimes, it is unsure who should be awarded a point, we decided on some additional rules for edge cases below:</p>
+                <ul>
+                    <li>If the ball hits the ceiling at any point, it is considered a failure to return, even if it bounces onto the opposing side.</li>
+                    <li>If the ball hits the net at any height, and then rolls up the net and lands on the opposing side without touching your own side,it is considered a valid return.</li>
+                    <li>If the ball hits the edge of the table, but bounces downwards, toward the floor, that is still considered a valid return.</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
