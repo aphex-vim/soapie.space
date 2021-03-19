@@ -10,27 +10,15 @@
         <link rel="stylesheet" type="text/css" href="../style.css">
         <title>speen's space</title>
         <style>
-            body, main{
-                background-color: bisque;
-            }
-            
-            header, nav, section, footer {
-                background-color:beige;
-            }
-            section {
-                padding: .5em;
-                padding-left: 1.5em;
-                padding-right: 1.5em;
-            }
-
-            ul {
-                list-style-type: square;
+            header{
+                background-image: url("../assets/pong2.gif");
+                background-size: cover;
             }
         </style>
     </head>
     <body>
         <header>
-            <h1>ping's pong</h1>
+            <h1 style="color:white">ping's pong</h1>
         </header>
         <nav>
             <a href="../index.html">Home</a> |
@@ -53,7 +41,7 @@
             </section>
             <section>
                 <h2>serving</h2>
-                <p>The game starts with the first serve, you can alternate who serves first but it doesn't matter much. To serve, you drop/toss the ball and hit it onto your side of the table such that it passes over the net and hits your opponent's side. There is no limitation on how far you are from the table as long as the ball hits your side of the table, and then the opponent's. This means if you are really funny you can serve from across the room as a joke.</p>
+                <p>The game starts with the first serve, you can alternate who serves first but it doesn't matter much. Every two points, the server changes. To serve, you drop/toss the ball and hit it onto your side of the table such that it passes over the net and hits your opponent's side. There is no limitation on how far you are from the table as long as the ball hits your side of the table, and then the opponent's. This means if you are really funny you can serve from across the room as a joke.</p>
             </section>
             <section>
                 <h2>scoring</h2>
@@ -63,17 +51,14 @@
                     <li>Your opponent attempts to return the ball, but upon going over the net it does not hit your side of the table.</li>
                     <li>You return the ball and it bounces two times on the your opponent's side.</li>
                 </ul>
-                <p>Sometimes, it is unsure who should be awarded a point, we decided on some additional rules for edge cases below:</p>
-                <ul>
-                    <li>If the ball hits the ceiling at any point, it is considered a failure to return, even if it bounces onto the opposing side.</li>
-                    <li>If the ball hits the net at any height, and then rolls up the net and lands on the opposing side without touching your own side,it is considered a valid return.</li>
-                    <li>If the ball hits the edge of the table, but bounces downwards toward the floor, that is still considered a valid return</li>
-                </ul>
             </section>
             <section>
                 <h2>additional rules</h2>
                 <p>These are some more rules that we have decided needed recognition</p>
                 <ul>
+                    <li>If the ball hits the ceiling at any point, it is considered a failure to return, even if it bounces onto the opposing side.</li>
+                    <li>If the ball hits the net at any height, and then rolls up the net and lands on the opposing side without touching your own side,it is considered a valid return.</li>
+                    <li>If the ball hits the edge of the table, but bounces downwards toward the floor, it is still considered a valid return</li>
                     <li>For a player's first game of the day, they are entitled to a number of practice rallies to warm up</li>
                     <li>Re-serves are only allowed at the discretion of the non-server, no matter how embarrassing the serve was</li>
                     <li>absolutely <strong>NO</strong> references to popular nintendo character Wario</li>
