@@ -1,0 +1,14 @@
+header{
+    background-image: url("../assets/walkies.gif");
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    min-width: 65em;
+}
+table a{
+    text-decoration: none;
+}
+table, td, th, tr{
+    border:solid black 1px;
+}
