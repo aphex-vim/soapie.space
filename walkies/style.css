@@ -9,6 +9,9 @@ table{
 table a{
     text-decoration: none;
 }
+table a:hover{
+    text-decoration: underline;
+}
 table, td, th, tr{
     border:solid black 1px;
 }
