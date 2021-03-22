@@ -4,7 +4,6 @@ header{
 table{
     margin: auto;
     border-collapse: collapse;
-    min-width: 65em;
 }
 table a{
     text-decoration: none;
@@ -14,4 +13,12 @@ table a:hover{
 }
 table, td, th, tr{
     border:solid black 1px;
+}
+td{
+    padding: .25em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+td:nth-child(2){
+    text-align: right;
 }
