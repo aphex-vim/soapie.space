@@ -14,13 +14,13 @@ def make_index_arrays(rows):
 
     # defining some vars to calculate the netchange per episode
     last_ep_end_rank=0
-    last_ep_num=int(rows[-1][1])
+    last_ep_num=int(rows[-1][0])
     episode_numbers=range(1,last_ep_num+1)
     changes_in_rank=[]
     
     # finding the net change in rank between episodes
     for i in episode_numbers:
-        cur_ep=[game for game in rows if int(game[1])==i]
+        cur_ep=[game for game in rows if int(game[0])==i]
         last_game_end_rank=int(cur_ep[-1][2])
 
         changes_in_rank.append(last_game_end_rank-last_ep_end_rank)
