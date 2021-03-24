@@ -3,13 +3,14 @@ auth spencer-maaaaan
 desc calculates fields to be used in make_tables.py from rows, returns a 2d array of the fields for the index table
 """
 import subprocess
+import datetime
 import json
 
 # calculating all the needed fields to generate the index table
 def make_index_arrays(rows):
     
     #generating the list of titles/links to be used later
-    links=get_links()
+    links, durations=get_episode_data()
 
     # defining some vars to calculate the netchange per episode
     last_ep_end_rank=0
@@ -36,18 +37,18 @@ def make_index_arrays(rows):
         else:
             changes_in_rank[i-1]=str(change)
 
-        outrows.append(["Episode "+str(i),changes_in_rank[i-1],links[i-1]])
+        outrows.append(["Episode "+str(i),durations[i-1],changes_in_rank[i-1],links[i-1]])
 
     # adding all the rows to the 2d ouput array
-    index_table=[["Episode #","Net Change","Episode Title/Link"]]
+    index_table=[["Episode #","Duration","Net Change","Episode Title/Link"]]
     for row in outrows:
         index_table.append(row)
 
     return index_table
 
 
-# returns a list of titles that are html links to their respective videos
-def get_links():
+# returns a list of titles that are html links to their respective videos, and the duration of the video
+def get_episode_data():
     
     # running youtube-dl with some options to get a json of the videos in the playlist
     with open("/tmp/episode_info.json", "w") as f:
@@ -55,9 +56,18 @@ def get_links():
 
     # for each video, extracting information from json and adding to title/link list
     links=[]
+    durations=[]
+
     with open("/tmp/episode_info.json", "r") as f:
         for line in f.readlines():
             episode=json.loads(line)
             links.append("<a href=\"https://www.youtube.com/watch?v="+episode["url"]+"\">"+episode["title"]+"</a>")
+            durations.append(episode["duration"])
 
-    return links
+    # converting time in seconds to h:m:s
+    durations=[str(datetime.timedelta(seconds=duration-1)) for duration in durations]
+
+    #trimming off padded zeros if duration has them
+    durations=[duration[2:] if duration.startswith("0:") else duration for duration in durations]
+
+    return links, durations
