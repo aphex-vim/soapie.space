@@ -9,7 +9,7 @@ header, nav, section, main, footer {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
-    max-width: 70em;
+    max-width: 60em;
 }
 
 header, nav, footer {
@@ -28,7 +28,7 @@ main {
     background-color: lightblue;
     margin: auto;
     padding: 0%;
-    max-width: 72em;
+    max-width: 62em;
 }
 
 section {
