@@ -5,9 +5,9 @@ description: a redesigned of one of my favorite album covers
 
 ## the basics of the assignment
 
-This project was submitted as an assignment in a Fall 2020 graphic design course I took, _Foundations of Design_. The gist of the assigment was that I had to find an album that I liked, and redesign the cover. My main focus in this project was learning Blender, a popular 3D modelling and animation program, as well as representing the feelings the album gave me, while staying faithful to the original cover art (see below).
+This project was submitted as an assignment in a Fall 2020 graphic design course I took, _Foundations of Design_. The gist of the assignment was that I had to find an album that I liked, and redesign the cover. My main focus in this project was learning Blender, a popular 3D modeling and animation program, as well as representing the feelings the album gave me, while staying faithful to the original cover art (see below).
 
-![An album cover. It depicts a scene where the ground is composed of a vast grid of white squares. Clouds can be seen on the horizon. In the foreground, there is a confusing collection of bulding facades. There is a rainbow-like ribbon of color on the right side of the cover. Near the top left corner the name of the band 'sweet trip' is typed in lowercase.](/assets/album0.webp "The original Sweet Trip velocity: design: comfort album cover")
+![An album cover. It depicts a scene where the ground is composed of a vast grid of white squares. Clouds can be seen on the horizon. In the foreground, there is a confusing collection of building facades. There is a rainbow-like ribbon of color on the right side of the cover. Near the top left corner the name of the band 'sweet trip' is typed in lowercase.](/assets/album0.webp "The original Sweet Trip velocity: design: comfort album cover")
 
 ## why I chose this album
 
@@ -52,4 +52,4 @@ The last part of the project was cut out for me. My cool professor has provided 
 
 ## my thoughts on the project
 
-Overall, I'm very happy with how this project turned out. I learned a lot about Blender, and love using it today. If I had more time I would have probably taken the final images into photoshop and done some post proccessing, but I needed to cut the work short to make the deadline. As much as I'd love to just get into Blender and try to make the whole thing from scratch, so I'll just leave it as is.
+Overall, I'm very happy with how this project turned out. I learned a lot about Blender, and love using it today. If I had more time I would have probably taken the final images into photoshop and done some post processing, but I needed to cut the work short to make the deadline. As much as I'd love to just get into Blender and try to make the whole thing from scratch, so I'll just leave it as is.

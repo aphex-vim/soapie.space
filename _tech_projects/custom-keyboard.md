@@ -20,7 +20,7 @@ My main goal was to make something that was quieter, because I felt bad for my r
 ### the first step to any keyboard build, stabilizers
 The first part of assembling a keyboard is to install the stabilizers on the PCB. Stabilizers are the little fake switches that sit on the end of the longer keys, such as space, left-shift, caps-lock, and backspace. Stabilizers ensure that these keys don't frequently bind by making sure pressure is applied to to the switch regardless of where the user presses the switch.
 
-![A printed circuit board sitting on a desk. It has small plastic and wire components installed, called 'stabilizers.'](/assets/keyboard2.webp "the skeleton of a keyboard")
+![A printed circuit board sitting on a desk. It has small plastic and wire components installed, called stabilizers.'](/assets/keyboard2.webp "the skeleton of a keyboard")
 
 ### installing switches into the plate
 Next, taking the plate (in this image it's the silvery aluminum part) and snapping the switches into place, making sure the pins on the bottom align with the holes on the PCB.

@@ -6,10 +6,10 @@ footer-text: viv pointed out that I spelled software wrong. oops.
 ## making a low poly portrait of Shel Silverstein
 The final project for my _Software for Design_ class was all about making illustrations for Shel Silverstien poems. He is the author of popular childrens' books such as _The Giving Tree_, _Where the Sidewalk Ends_, or _Falling up_. The whole class collaborated on making a book of illustrations for his poems. The portrait I made was part of the project that I submitted as both a promotional poster, and a possible cover for the book.
 
-![Three book covers. First, the cover of the book 'Falling Up.'' The cover features a kid flying up into the sky away from a city skyline. Next, the over of the book 'Where the Sidewalk Ends.' The cover features a couple of children looking over a sheer cliff, where a sidewalk ends. Last, the cover of the book 'The Giving Tree.' The cover features a tree dropping an apple into a child's hands.](/assets/shel0.webp "Falling Up, Where the Sidewalk Ends, and The Giving Tree")
+![Three book covers. First, the cover of the book 'Falling Up.' The cover features a kid flying up into the sky away from a city skyline. Next, the over of the book 'Where the Sidewalk Ends.' The cover features a couple of children looking over a sheer cliff, where a sidewalk ends. Last, the cover of the book 'The Giving Tree.' The cover features a tree dropping an apple into a child's hands.](/assets/shel0.webp "Falling Up, Where the Sidewalk Ends, and The Giving Tree")
 
 ## choosing a good image of Shel
-I started this project by selecting a nice picture of Shel Silverstein. This part was pretty easy because he was very photogenic. I ended up going with this image, becuase I liked the slight tilt of his head and he has put on a big smile.
+I started this project by selecting a nice picture of Shel Silverstein. This part was pretty easy because he was very photogenic. I ended up going with this image, because I liked the slight tilt of his head and he has put on a big smile.
 
 ![A black and white picture of Shel Silverstein. He has a bald head with thick eyebrows and a bushy beard.](/assets/shel3.webp "Shel Silverstien")
 
