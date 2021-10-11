@@ -1,6 +1,6 @@
 ---
 layout: post
-description: a redesigned of one of my favorite album covers
+description: redesigning of one of my favorite album covers
 ---
 
 ## the basics of the assignment
