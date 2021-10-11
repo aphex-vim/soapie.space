@@ -24,4 +24,4 @@ I wanted to keep my portrait in black and white, just as the image was. I starte
 ## the final product
 I think I ended up with a really nice poster in the end. I really hope to make more portraits in this style and improve my techniques. I also would be interesting in scripting some of the process, like the coloring of the triangles, which would make producing art like this much easier.
 
-![My final portrait of Shel, it makes use of a low-poly art style, where shapes are made up of several different sized triangles. A speech bubble reads 'Shelebration' abover his head.](/assets/shel5.webp "My Portrait of Shel Silverstein")
+![My final portrait of Shel, it makes use of a low-poly art style, where shapes are made up of several different sized triangles. A speech bubble reads 'Shelebration' above his head.](/assets/shel5.webp "My Portrait of Shel Silverstein")
