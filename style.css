@@ -25,17 +25,11 @@ header {
     background-repeat: no-repeat;
 }
 
-section {
-    padding: .5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-}
-
 ul {
     list-style-type: square;
 }
 
-img {
+img, video {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -44,10 +38,4 @@ img {
     border: lightblue;
     border-style: solid;
     border-width: .25em;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
