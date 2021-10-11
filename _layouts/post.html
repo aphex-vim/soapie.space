@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Spencer Tenney">
+        <meta name="description" content="speen's collection of cool projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="https://speen.space/assets/opengraph.png">
+        <meta property="og:image:alt" content="A small drawing of a computer.">
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+        <title>{{ site.title }}</title>
+       
+    </head>
+    <body>
+        {% include header.html %}
+        {% include navigation.html %}
+        <main>
+            {{ content }}
+        </main>
+        
+        {% if page.footer-text %}
+            <footer>
+                {{ page.footer-text }}
+            </footer>
+        {% endif %}
+    </body>
+</html>

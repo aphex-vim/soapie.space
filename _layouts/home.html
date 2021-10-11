@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Spencer Tenney">
+        <meta name="description" content="speen's collection of cool projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="https://speen.space/assets/opengraph.png">
+        <meta property="og:image:alt" content="A small drawing of a computer.">
+        <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+        <title>{{ site.title }}</title>
+       
+    </head>
+    <body>
+        {% include header.html %}
+        {% include navigation.html %}
+        {% include about.html %}
+
+        <div>
+            <h2>Some of the tech stuff I've worked on...</h2>
+            <ul>
+            {% for proj in site.tech_projects %}
+                {% if proj.external_url %}
+                    <li><a href = "{{ proj.external-url }}">{{ proj.description }}</a></li>            
+                {% else %}
+                    <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div>
+            <h2>Some of my art...</h2>
+            <ul>
+            {% for proj in site.art_projects %}
+                <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>

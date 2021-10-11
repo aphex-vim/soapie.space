@@ -1,0 +1,53 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    max-width: 50em;
+    margin: auto;
+}
+
+body > * {
+    background-color:lightcyan;
+    max-width: inherit;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+header, nav, footer {
+    text-align: center;
+}
+
+header {
+    background-color: lightcyan;
+    font-style: italic;
+    background-image: url("/assets/banner.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40vw;
+    max-height: 60vh;
+    border: lightblue;
+    border-style: solid;
+    border-width: .25em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
