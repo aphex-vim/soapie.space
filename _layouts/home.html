@@ -17,20 +17,16 @@
         {% include about.html %}
 
         <div>
-            <h2>Some of the tech stuff I've worked on...</h2>
+            <h2>programming projects...</h2>
             <ul>
             {% for proj in site.tech_projects %}
-                {% if proj.external_url %}
-                    <li><a href = "{{ proj.external-url }}">{{ proj.description }}</a></li>            
-                {% else %}
                     <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
-                {% endif %}
             {% endfor %}
             </ul>
         </div>
 
         <div>
-            <h2>Some of my art...</h2>
+            <h2>art projects...</h2>
             <ul>
             {% for proj in site.art_projects %}
                 <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
