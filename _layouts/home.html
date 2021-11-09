@@ -19,7 +19,7 @@
         <div>
             <h2>programming projects...</h2>
             <ul>
-            {% for proj in site.tech_projects %}
+            {% for proj in site.programming %}
                     <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
             {% endfor %}
             </ul>
@@ -28,7 +28,7 @@
         <div>
             <h2>art projects...</h2>
             <ul>
-            {% for proj in site.art_projects %}
+            {% for proj in site.art %}
                 <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
             {% endfor %}
             </ul>
