@@ -25,9 +25,9 @@ mastodon: https://mastodon.lol/@speen
 github: https://github.com/spencer-maaaaan
 
 collections:
-  tech_projects:
+  programming:
     output: true
-  art_projects:
+  art:
     output: true
 
 # Exclude from processing.
