@@ -44,7 +44,7 @@ I tested out one of his strategies, using a fourth image as a multiply/darken la
 
 When I ordered an IR filter for taking pictures outside, I ended up ordering a filter that _only_ lets IR light through, I only recently got the correct filter and so I want to take some colored pictures outside sometime.
 
-I also think it would be cool to synthesize all the things I've learned messing with the camera and attempting to make some short stop-motion animations. If I could get a more reliable way to attach the gameboy to the tripod (right now I'm using a bike mount meant to hold your phone) I could confidently take several frames worth of color pictures and make something neat.
+I also think it would be cool to synthesize all the things I've learned messing with the camera and attempting to make some short stop-motion animations. If I could get a more reliable way to attach the gameboy to the tripod (right now I'm using a bike mount meant to hold a phone) I could confidently take several frames worth of color pictures and make something neat.
 
 ## why I won't try these things
-I did a bit of work on this project just before ACM's project showcase on my campus, but my gameboy died _the day_ before the expo. So I won't be working on this project anymore, not any time soon. Not until I feel like buying a new gameboy. (Maybe I'll buy one with ACM money?)
+I did a bit of work on this project just before ACM's project showcase on my campus, but my gameboy died **_the day_** before the expo. The screen is completely busted. So I won't be working on this project anymore, not any time soon. Not until I feel like buying a new gameboy. (Maybe I'll buy one with ACM money?)
