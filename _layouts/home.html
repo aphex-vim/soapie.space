@@ -9,7 +9,6 @@
         <meta property="og:image:alt" content="A small drawing of a computer.">
         <link rel="stylesheet" type="text/css" href="/style.css">
         <title>{{ site.title }}</title>
-       
     </head>
     <body>
         {% include header.html %}
@@ -22,6 +21,7 @@
             {% for proj in site.programming %}
                     <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
             {% endfor %}
+                    <li><a href="/flags">a simple javascript pride flag generator</a></li>
             </ul>
         </div>
 

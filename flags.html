@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Spencer Tenney">
+    <meta name="description" content="speen's collection of cool projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://speen.space/assets/opengraph.png">
+    <meta property="og:image:alt" content="A small drawing of a computer.">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>speen's space</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.5.1/jscolor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<style>
+    #colorInputs > * {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button, .handle, input.jscolor {
+        margin: 0.25em;
+        height: auto;
+        text-align: center;
+    }
+
+    button, .handle, select {
+        background-color: #E9E9ED;
+        padding: 0 0.5em;
+        width: 31%;
+        border-radius: 0;
+        border-style: none;
+        cursor: pointer;
+    }
+
+    .handle {
+        padding-top: 0.2em;
+        cursor: grab;
+    }
+
+    input.jscolor {
+        border-style: solid;
+    }
+
+    #addButton, #downloadButton, #selectPreset {
+        padding: 0.15em 0.25em;
+    }
+
+    canvas {
+        max-width: 80%;
+        border-style: groove;
+        padding: .15em;
+        margin: 1em;
+    }
+
+    .controls {
+        text-align: center;
+        width: min-content;
+        margin: auto;
+    }
+
+    .main {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <h1 class="banner_header">speen's space</h1>
+    </header>
+    <nav>
+        <a href="/index.html">home</a> |
+        <a href="https://github.com/spencer-maaaaan">github</a> |
+        <a rel="me" href="https://types.pl/@speen">mastodon</a> |
+        <a href="mailto:spencer.d.tenney@gmail.com">email</a> |
+        <a href="/friends.html">friends</a>
+    </nav>
+    <div class="main">
+        <h2 style="margin: 0.5em 0">pride flag generator</h2>
+        <canvas id="canvas"></canvas>
+        <div class="controls">
+            <div class="static-controls">
+                <button type="button" id="addButton" onclick="addColorInput()">Add new stripe</button>
+                <button type="button" id="downloadButton" onclick="downloadCanvas()">Download flag</button>
+                <select type="select" id="selectPreset" title="load a preset flag" onchange="loadSelectedFlag()"></select>
+            </div>
+            <div id="colorInputs"></div>
+        </div>
+    </div>
+    <div>
+        <h2>about</h2>
+        <p>I recently joined a dnd campaign with some friends, and one of the party members made friendship bracelets in the color palettes of our characters (<a href="/assets/friendshipbracelet.jpeg">here's mine!</a>). I thought it would be fun to make our characters' color palettes into pride flags and had the idea to make a javascript webtoy to do it. After a couple days of work, this is what I ended up with!</p>
+
+        <h2>resources</h2>
+        <ul>
+            <li><a href="https://jscolor.com/">jscolor.js</a> for color picking</li>
+            <li><a href="https://sortablejs.github.io/Sortable/">SortableJS</a> for reorderable drag-and-drop lists</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // configuring jscolor
+    jscolor.presets.default = {
+        position: "right",
+        smartPosition: true,
+        uppercase: false,
+        onChange: "onStripeChange()",
+    }
+
+    // grab and init canvas element
+    const canvas = document.getElementById("canvas")
+    const context = canvas.getContext("2d")
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const default_stripe_color = "#CCCCCC"
+
+    // controls for adding/removing stripes
+    const controls = document.getElementById("controls")
+    const stripe_div = document.getElementById("stripes")
+
+    // should be called when a stripe is added/removed/changed
+    function onStripeChange() {
+        stripes = document.querySelectorAll("input")
+        stripeHeight = Math.floor(canvas.height / stripes.length)
+
+        for (let i = 0; i < stripes.length; i++) {
+            context.fillStyle = stripes[i].value
+            context.fillRect(0, i * stripeHeight, canvas.width, stripeHeight)
+        }
+    }
+
+    function addColorInput(color = default_stripe_color) { //string
+        var colorInputs = document.getElementById("colorInputs")
+        var newInputDiv = document.createElement("div")
+
+        // make new input tag and instantiate jscolor picker in it
+        var newInput = document.createElement("input")
+        var newPicker = new jscolor(newInput, { preset: "small", value: color })
+
+        // copy stripe button
+        var newCopyButton = document.createElement("button")
+        newCopyButton.textContent = "copy"
+        newCopyButton.title = "copy this stripe and add it to the bottom of the flag"
+        newCopyButton.addEventListener("click", function () {
+            addColorInput(color = newPicker.toHEXString())
+        })
+
+        // creating the remove button
+        // the remove action is also defined when the event listener is attached
+        var newRemoveButton = document.createElement("button")
+        newRemoveButton.textContent = "x"
+        newRemoveButton.title = "remove this stripe from the flag"
+        newRemoveButton.addEventListener("click", function () {
+            colorInputs.removeChild(newInputDiv);
+            onStripeChange()
+        })
+
+        // creating the sortable handle
+        // this is the part of the element that the user can click and drag to sort the stripes
+        var newHandle = document.createElement("span")
+        newHandle.classList.add("handle")
+        newHandle.innerHTML = "="
+        newHandle.title = "click and drag to reposition stripe"
+
+        // appending color picker and remove button to their new parent div, a child of the colorInputs div
+        newInputDiv.appendChild(newHandle)
+        newInputDiv.appendChild(newInput)
+        newInputDiv.appendChild(newCopyButton)
+        newInputDiv.appendChild(newRemoveButton)
+
+        colorInputs.appendChild(newInputDiv)
+        onStripeChange()
+    }
+
+    function loadSelectedFlag() {
+        flag_index = document.getElementById("selectPreset").selectedIndex
+        flag = default_flags[flag_index]
+
+        // removing old flag
+        document.getElementById("colorInputs").innerHTML = ""
+
+        // setting new flag
+        for (let i = 0; i < flag.stripes.length; i++) {
+            addColorInput(flag.stripes[i])
+        }
+    }
+
+    function downloadCanvas() {
+        var downloadLink = document.createElement("a");
+
+        // set the download attribute of the anchor element to the canvas data URL
+        downloadLink.download = "flag.png";
+        downloadLink.href = canvas.toDataURL("image/png;base64");
+
+        // click the anchor element to initiate the download
+        downloadLink.click();
+    }
+
+    // making the list of color inputs a sortable
+    Sortable.create(colorInputs, {
+        handle: ".handle",
+        animation: 150,
+        onChange: function () { onStripeChange() } // won't work if the event handler isn't wrapped in the function literal ??
+    })
+
+    // PAGE INIT STUFF
+    // adding default stripes
+    const pride_flags = [
+        { name: "Pride",      stripes: ["#e40303", "#ff8c00", "#ffed00", "#008026", "#004dff", "#750787"] },
+        { name: "WLW",        stripes: ["#d52d00", "#ff9a56", "#ffffff", "#d362a4", "#a30262"] },
+        { name: "MLM",        stripes: ["#099276", "#2bd0ae", "#9de9c3", "ffffff", "#81b0e4", "#564fd0", "#431e7e"] },
+        { name: "Pan",        stripes: ["#ff218c", "#ffd800", "#21b1ff"] },
+        { name: "Bi",         stripes: ["#d60270", "#d60270", "#9b4f96", "#0038a8", "#0038a8"] },
+        { name: "Ace",        stripes: ["#000000", "#7f7f7f", "#ffffff", "#660066"] },
+        { name: "Aro",        stripes: ["#3da542", "#a7d379", "#ffffff", "#a9a9a9", "#000000"] },
+        { name: "Trans",      stripes: ["#55cdfc", "#f7a8b8", "#ffffff", "#f7a8b8", "#55cdfc"] },
+        { name: "Nonbinary", stripes: ["#fff430", "#ffffff", "#9c59d1", "#000000"] }
+    ]
+
+    const dnd_characters = [
+        { name: "Kaz",   stripes: ["#613583", "#5a0909", "#99c1f1", "#deddda", "#241f31"] },
+        { name: "Ruse",  stripes: ["#284e51", "#98c6b9", "#dcf4d2", "#ef9a93", "#e25961"] },
+        { name: "Lorna", stripes: ["#0d0048", "#ac84bc", "#e7deee", "#ffffff", "#ffd651"] },
+        { name: "Shiso", stripes: ["#ff87f6", "#ffbcfa", "#ffd1fc", "#ffe2fd", "#ffedfe"] },
+        { name: "Atlas", stripes: ["#714722", "#402813", "#a72b1d", "#878787", "#cccccc"] },
+        { name: "Nasir", stripes: ["#26207e", "#5059d0", "#6b9de7", "#d4f2ff", "#ffffff"] }
+    ]
+
+    const default_flags = dnd_characters.concat(pride_flags)
+
+    // populate select box with available choices
+    selectPreset = document.getElementById("selectPreset")
+    for (let i = 0; i < default_flags.length; i++) {
+        var newOption = document.createElement("option")
+        newOption.innerHTML = default_flags[i].name
+        newOption.value = i
+        selectPreset.appendChild(newOption)
+    }
+
+    // select and load a random default flag
+    selectPreset.selectedIndex = Math.floor(Math.random() * selectPreset.options.length)
+    loadSelectedFlag()
+</script>
+
+</html>
