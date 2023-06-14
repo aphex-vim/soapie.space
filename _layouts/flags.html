@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Spencer Tenney">
-    <meta name="description" content="speen's collection of cool projects">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://speen.space/assets/opengraph.png">
-    <meta property="og:image:alt" content="A small drawing of a computer.">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>speen's space</title>
-</head>
+{% include head.html %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.5.1/jscolor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 <style>
@@ -66,16 +57,8 @@
 </style>
 
 <body>
-    <header>
-        <h1 class="banner_header">speen's space</h1>
-    </header>
-    <nav>
-        <a href="/index.html">home</a> |
-        <a href="https://github.com/spencer-maaaaan">github</a> |
-        <a rel="me" href="https://types.pl/@speen">mastodon</a> |
-        <a href="mailto:spencer.d.tenney@gmail.com">email</a> |
-        <a href="/friends.html">friends</a>
-    </nav>
+    {% include header.html %}
+    {% include navigation.html %}
     <div class="main">
         <h2 style="margin: 0.5em 0">pride flag generator</h2>
         <canvas id="canvas"></canvas>
@@ -89,14 +72,7 @@
         </div>
     </div>
     <div>
-        <h2>about</h2>
-        <p>I recently joined a dnd campaign with some friends, and one of the party members made friendship bracelets in the color palettes of our characters (<a href="/assets/friendshipbracelet.jpeg">here's mine!</a>). I thought it would be fun to make our characters' color palettes into pride flags and had the idea to make a javascript webtoy to do it. After a couple days of work, this is what I ended up with!</p>
-
-        <h2>resources</h2>
-        <ul>
-            <li><a href="https://jscolor.com/">jscolor.js</a> for color picking</li>
-            <li><a href="https://sortablejs.github.io/Sortable/">SortableJS</a> for reorderable drag-and-drop lists</li>
-        </ul>
+        {{ content }}
     </div>
 </body>
 <script>
@@ -243,5 +219,4 @@
     selectPreset.selectedIndex = Math.floor(Math.random() * selectPreset.options.length)
     loadSelectedFlag()
 </script>
-
 </html>

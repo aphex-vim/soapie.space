@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <style>
+        h2, p {
+            text-align: center;
+        }
+    
+        img {
+            padding: 2em;
+            border: none;
+        }
+    </style>
+    <body>
+        {% include header.html %}
+        {% include navigation.html %}
+
+        <div>
+            <h2>404 - page not found</h2>
+            <img src="/assets/404.gif" title="404!" alt="An animation of an old computer, its monitor is flashing between the message '404' and a piece of paper with a frown on it.">
+            <p>Should this page exist? Let me know.</p>
+        </div>
+    </body>
+</html>

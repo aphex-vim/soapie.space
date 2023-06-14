@@ -39,7 +39,7 @@ Only one point can be scored at a time. A point is awarded to a player when thei
 These are some more rules that we have decided needed recognition
 
 - If the ball hits the ceiling at any point, it is considered a failure to return, even if it bounces onto the opposing side, referred to as the "ceiling clause".
-- If the ball hits the net at any height, and then rolls up the net and lands on the opposing side without touching your own side,it is considered a valid return.
+- If the ball hits the net at any height, and then rolls up the net and lands on the opposing side without touching your own side, it is considered a valid return.
 - If the ball hits the edge of the table, but bounces downwards toward the floor, it is still considered a valid return
 - For a player's first game of the day, they are entitled to a number of practice rallies to warm up
 - Re-serves are only allowed at the discretion of the non-server, no matter how embarrassing the serve was

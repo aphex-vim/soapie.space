@@ -1,37 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Spencer Tenney">
-        <meta name="description" content="speen's collection of cool projects">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="https://speen.space/assets/opengraph.png">
-        <meta property="og:image:alt" content="A small drawing of a computer.">
-        <link rel="stylesheet" type="text/css" href="/style.css">
-        <title>{{ site.title }}</title>
-    </head>
+    {% include head.html %}
     <body>
         {% include header.html %}
         {% include navigation.html %}
         {% include about.html %}
-
-        <div>
-            <h2>programming projects...</h2>
-            <ul>
-            {% for proj in site.programming %}
-                    <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
-            {% endfor %}
-                    <li><a href="/flags">a simple javascript pride flag generator</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>art projects...</h2>
-            <ul>
-            {% for proj in site.art %}
-                <li><a href = "{{ proj.url }}">{{ proj.description }}</a></li>
-            {% endfor %}
-            </ul>
-        </div>
+        {% include blog.html %}
     </body>
 </html>
