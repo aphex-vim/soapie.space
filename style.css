@@ -1,13 +1,18 @@
+:root {
+ --main-bg-color: lightblue;
+ --accent-bg-color: lightcyan;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue;
+    background-color: var(--main-bg-color);
     max-width: 50em;
     margin: auto;
     line-height: 2.5cap;
 }
 
 body > * {
-    background-color:lightcyan;
+    background-color: var(--accent-bg-color);
     max-width: inherit;
     margin: 1em;
     padding: 1em;
@@ -20,7 +25,7 @@ header, nav, footer {
 }
 
 header {
-    background-color: lightcyan;
+    background-color: var(--accent-bg-color);
     font-style: italic;
     background-image: url("/assets/banner.png");
     background-position: center bottom;
@@ -36,7 +41,7 @@ img, video {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
-    border: lightblue;
+    border: var(--main-bg-color);
     border-style: solid;
     border-width: .25em;
 }
