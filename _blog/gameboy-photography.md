@@ -2,7 +2,8 @@
 layout: post
 title: using tricks to take colored pictures with a gameboy camera
 date: 2021-02-28
-tags: hacking technology photography
+updated: 2021-10-10
+tags: hacking photography
 ---
 
 ## how I came across my gameboy camera

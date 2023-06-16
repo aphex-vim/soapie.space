@@ -1,11 +1,16 @@
 <div>
     <h2>blog</h2>
-    <ul>
+    <ul class="blog">
     {% assign blog = site.blog | sort: "date" | reverse %}
     {% for post in blog %}
-    <div>
-        {{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a>
-    </div>
+    <li class="blog-post">
+        <a href="{{ post.url }}"><h3 class="blog-title">{{ post.title }}</h3></a>
+        <div class="byline" style="font-size:0.75em;">
+            <date datetime="{{ post.date }}">{{ post.date | date:"%B %e, %Y" }}</date>
+            {% if post.updated %}<date datetime="{{ post.updated }}"> (updated {{ post.updated | date:"%B %e, %Y" }})</date> {% endif %}
+            {% if post.tags[0] %} · {{ post.tags | join: ", " }} {% endif %}
+        </div>
+    </li>
     {% endfor %}
     </ul>
 </div>

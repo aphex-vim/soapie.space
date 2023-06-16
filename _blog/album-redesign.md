@@ -2,7 +2,7 @@
 layout: post
 title: redesigning of one of my favorite album covers
 date: 2020-08-17
-tags: art
+tags: art music
 ---
 
 ## the basics of the assignment

@@ -2,6 +2,7 @@
 layout: post
 title: read about a keyboard I built
 date: 2021-01-29
+tags: making keyboards
 ---
 # building my second custom keyboard
 ### what I learned from my previous build

@@ -32,6 +32,15 @@ header {
     background-repeat: no-repeat;
 }
 
+ul.blog {
+    list-style-type: none;
+}
+
+.blog-title {
+    margin-bottom: 0;
+    line-height: 1;
+}
+
 ul {
     list-style-type: square;
 }

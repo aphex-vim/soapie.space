@@ -2,6 +2,7 @@
 layout: flags
 title: a simple javascript pride flag generator
 date: 2023-03-03
+tags: programming pride dnd
 ---
 ## about
 I recently joined a dnd campaign with some friends, and one of the party members made friendship bracelets in the color palettes of our characters ([here's mine!](/assets/friendshipbracelet.jpeg)). 
