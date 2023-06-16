@@ -40,7 +40,7 @@ I read up some more on taking gameboy camera pictures, and found [this](https://
 
 I tested out one of his strategies, using a fourth image as a multiply/darken layer to get a better image. This is what I was able to capture.
 
-![A set of three gameboy camera pictures. They show a couple different techniques described above to get better image quality. The subject is a large carton of gold fish.](/assets/gbcamera10.webp "Testing Björn's methods")
+![A set of three gameboy camera pictures. They show a couple different techniques described above to get better image quality. The subject is a large carton of gold fish.](/assets/gbcamera10.png "Testing Björn's methods")
 
 ## stuff I still want to try
 
