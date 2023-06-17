@@ -1,3 +1,5 @@
 _site/
 _drafts/
+_plugins/
 .jekyll-cache/
+generate_tags.sh

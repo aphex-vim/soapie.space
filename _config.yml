@@ -13,6 +13,9 @@ youtube: https://www.youtube.com/@predatoru
 collections:
   blog:
     output: true
+  tags:
+    output: true
+    permalink: tagged/:path
 
 # Exclude from processing.
 # The following items will not be processed, by default.
