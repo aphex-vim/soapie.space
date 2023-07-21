@@ -4,7 +4,6 @@ title: making a poster of Shel Silverstein
 date: 2021-02-04
 tags: art poster
 ---
-## making a low poly portrait of Shel Silverstein
 The final project for my _Software for Design_ class was all about making illustrations for Shel Silverstein poems. He is the author of popular childrens' books such as _The Giving Tree_, _Where the Sidewalk Ends_, or _Falling up_. The whole class collaborated on making a book of illustrations for his poems. The portrait I made was part of the project that I submitted as both a promotional poster, and a possible cover for the book.
 
 ![Three book covers. First, the cover of the book 'Falling Up.' The cover features a kid flying up into the sky away from a city skyline. Next, the over of the book 'Where the Sidewalk Ends.' The cover features a couple of children looking over a sheer cliff, where a sidewalk ends. Last, the cover of the book 'The Giving Tree.' The cover features a tree dropping an apple into a child's hands.](/assets/shel0.jpg "Falling Up, Where the Sidewalk Ends, and The Giving Tree")

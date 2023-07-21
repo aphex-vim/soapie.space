@@ -7,7 +7,7 @@
         <div>
             <h2>posts tagged "{{ page.tag-name }}"</h2>
             <ul class="blog">
-            {% assign blog = site.blog | sort: "date" | reverse %}
+            {% assign blog = site.posts | sort: "date" | reverse %}
             {% for post in blog %}
             {% if post.tags contains page.tag-name %}
             <li class="blog-post">

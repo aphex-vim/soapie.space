@@ -5,8 +5,6 @@ date: 2021-10-11
 tags: programming simulations
 ---
 <video controls src="/assets/boids0.mp4" muted autoplay loop></video>
-
-## what are boids?
 These are boids. They are an example of fairly complex behaviors coming from simple rules. They are supposed to be an accurate simulation of flock/schooling behavior that can be observed in birds/fish.
 
 ## what rules do boids follow?

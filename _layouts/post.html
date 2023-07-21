@@ -5,6 +5,12 @@
         {% include header.html %}
         {% include navigation.html %}
         <main>
+            <h2 class="blog-title">{{ page.title }}</h2>
+            <div class="byline" style="font-size:0.75em;">
+                <date datetime="{{ page.date }}">{{ page.date | date:"%B %e, %Y" }}</date>
+                {% if page.updated %}<date datetime="{{ page.updated }}"> (updated {{ page.updated | date:"%B %e, %Y" }})</date> {% endif %}
+                {% if page.tags[0] %} · {% for tag in page.tags %} <a href="/tagged/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}
+            </div>
             {{ content }}
         </main>
     </body>

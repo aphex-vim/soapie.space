@@ -1,7 +1,7 @@
 <div>
     <h2>blog</h2>
     <ul class="blog">
-    {% assign blog = site.blog | sort: "date" | reverse %}
+    {% assign blog = site.posts | sort: "date" | reverse %}
     {% for post in blog %}
     <li class="blog-post">
         <a href="{{ post.url }}"><h3 class="blog-title">{{ post.title }}</h3></a>

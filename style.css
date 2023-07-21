@@ -32,15 +32,6 @@ header {
     background-repeat: no-repeat;
 }
 
-ul.blog {
-    list-style-type: none;
-}
-
-.blog-title {
-    margin-bottom: 0;
-    line-height: 1;
-}
-
 ul {
     list-style-type: square;
 }
@@ -53,4 +44,19 @@ img, video {
     border: var(--main-bg-color);
     border-style: solid;
     border-width: .25em;
+}
+
+/* blog listing stuff */
+ul.blog {
+    list-style-type: none;
+}
+
+.blog-title {
+    margin-bottom: 0;
+    line-height: 1cap;
+}
+
+/* syntax highlighted code snippets */
+pre.highlight {
+    padding: 1em;
 }

@@ -1,3 +1,18 @@
+# github page's configuration
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+  
+
 # site globals
 title: speen's space
 description: speen's collection of cool projects
@@ -11,8 +26,9 @@ youtube: https://www.youtube.com/@predatoru
 
 # enable display of blog collection pages
 collections:
-  blog:
+  posts:
     output: true
+    permalink: /blog/:title
   tags:
     output: true
     permalink: tagged/:path

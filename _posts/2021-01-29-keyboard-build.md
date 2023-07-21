@@ -4,9 +4,7 @@ title: read about a keyboard I built
 date: 2021-01-29
 tags: making keyboards
 ---
-# building my second custom keyboard
 ### what I learned from my previous build
-
 After spending some time with my first custom build, I had learned quite a bit about what I wanted from a keyboard. Although I like my first board a lot, there were definitely some things I improved on in my second build.
 
 ![A keyboard roughly 75% the normal size of a keyboard, sitting on a desk. It has a band of light emanating from the bottom.](/assets/keyboard0.jpg "my first custom mechanical keyboard")

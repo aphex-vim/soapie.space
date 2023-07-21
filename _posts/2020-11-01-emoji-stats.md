@@ -4,7 +4,6 @@ title: emoji stats, a discord bot that tracks emoji use
 date: 2020-11-01
 tags: programming data
 ---
-## why I started this project
 A server I'm in makes liberal use of emoji, I thought it would be a neat thing to start collecting data on. It also let me get more familiar with some of Python's built in libraries, like pickle or json.
 
 ## example graph

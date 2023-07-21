@@ -5,8 +5,6 @@ date: 2021-02-28
 updated: 2021-10-10
 tags: hacking photography
 ---
-
-## how I came across my gameboy camera
 I remember the first time I saw my gameboy camera, I was a senior in high school and was on a trip to the local flea market with some friends. We walked into the only games stall in there at the time, and I looked at the cases of gameboy games on the counter. There were always tons of obscure games that I never cared to try like _Rugrats: Go Wild_ or _World Championship Poker_. However, one cartridge did catch my eye, the gameboy camera. I loved old tech and was on a big gameboy kick at the time so the idea of taking pictures on my gameboy sounded pretty cool. Somehow though, for that visit and several after I had convinced myself that I didn't need a gameboy camera, it would just be some useless plastic that I would get bored of quickly. I visited that stall a few more times that year, and the camera sat there, taunting me. One day I decided, if I went to that stall and the camera was there, I would buy it. Now I've got one and I need to figure out a new way to make it fun.
 
 ![A blue gameboy camera cartridge, it is a small rectangular box of plastic with a spherical enclosure on one side that houses a camera.](/assets/gbcamera0.jpg "a gameboy camera")
