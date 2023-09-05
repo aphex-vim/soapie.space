@@ -2,7 +2,7 @@
 layout: post
 title: making a portrait of one of my favorite musicians out of text
 date: 2021-04-26
-tags: art poster
+tags: art poster music
 ---
 For the final assignment in my Foundations of Design class, I had to make a portrait of someone I looked up to using only text. The text was supposed to be a quote from my person of choice. I decided I would make the portrait of Stefan Burnett, aka MC Ride of Death Grips.
 

@@ -1,6 +1,10 @@
 #!/bin/bash
 # generated md files for each tag present on the site
-POSTS_DIR="_blog"
+POSTS_DIR="_posts"
+TAGS_DIR="_tags"
+
+# clearing tags dir
+rm $TAGS_DIR/*
 
 # array to store the extracted tags
 tags=()
@@ -21,5 +25,5 @@ unique_tags=($(printf '%s\n' "${tags[@]}" | sort -u))
 
 # making md files for each tag
 for tag in "${unique_tags[@]}"; do
-    printf -- "---\nlayout: tag\ntag-name: $tag\n---" > _tags/$tag.md
+    printf -- "---\nlayout: tag\ntag-name: $tag\n---" > $TAGS_DIR/$tag.md
 done
