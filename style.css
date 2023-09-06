@@ -56,7 +56,16 @@ ul.blog {
     line-height: 1.5cap;
 }
 
-/* syntax highlighted code snippets */
+/* styles for syntax highlighted code snippets */
 pre.highlight {
     padding: 1em;
+    overflow: auto;
+}
+
+pre {
+    tab-size: 4;
+}
+
+table.rouge-table {
+    line-height: 2cap;
 }
