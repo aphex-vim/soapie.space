@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 ---
 ## contact me
 - discord: <span title="formerly spence#6125" style="text-decoration: underline dotted">spnce</span>

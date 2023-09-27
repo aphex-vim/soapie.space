@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 ---
 
 ## check out my friends' sites:
