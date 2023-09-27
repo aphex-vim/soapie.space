@@ -5,7 +5,7 @@
         {% include header.html %}
         {% include navigation.html %}
         <main>
-            {% if post.title %}
+            {% if page.title %}
             <h2 class="blog-title">{{ page.title }}</h2>
             <div class="byline" style="font-size:0.75em;">
                 <date datetime="{{ page.date }}">{{ page.date | date:"%B %e, %Y" }}</date>
