@@ -34,6 +34,9 @@ This is an example of a mask, it was created manually using a threshold filter. 
 
 The sorter looks at each column of the image and sorts each **interval** of white pixels. In this context, the intervals are each contiguous group of white pixels along the columns of the image. *Note: Intervals can also be the rows of the image, diagonal lines, or even concentric arcs within the image.*
 
+For instance, if we were to label the horizontal intervals for all the white pixels on this image of a fish with a different color, it would look like this:
+![""](/assets/pixelsorting5.gif)
+
 ## creating animations using pixel sorting
 !["An animation of some seaweed paper. The animation shows the intervals of the pixel sort getting larger and smaller, looping infintely."](/assets/pixelsorting4.gif)
 
@@ -46,7 +49,7 @@ do
 	pixel-sorter "seaweed.jpg" -a 90 -u $upper
 done
 ```
-This code uses a for loop to run the pixel sorter with the upper limit of the threshold mask set to 1, 0.9, 0.8...0.3. Then, the frames generated from this for loop can be stitched together into a gif. For this I used [ezgif](https://ezgif.com/), as it is well, easy.
+This code uses a for loop to run the pixel sorter with the upper limit of the threshold mask set to 1, 0.9, 0.8...0.3. Then, the frames generated from this for loop can be stitched together into a gif. For combining the frames into a single gif file I used [ezgif](https://ezgif.com/), as it is well, easy.
 
 ## resources
 - acerola’s [video](https://www.youtube.com/watch?v=HMmmBDRy-jE) on pixel sorting as a GPU shader effect
