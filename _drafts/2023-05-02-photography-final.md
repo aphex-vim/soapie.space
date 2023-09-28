@@ -34,8 +34,9 @@ This is an example of a mask, it was created manually using a threshold filter. 
 
 The sorter looks at each column of the image and sorts each **interval** of white pixels. In this context, the intervals are each contiguous group of white pixels along the columns of the image. *Note: Intervals can also be the rows of the image, diagonal lines, or even concentric arcs within the image.*
 
-For instance, if we were to label the horizontal intervals for all the white pixels on this image of a fish with a different color, it would look like this:
-![""](/assets/pixelsorting5.gif)
+!["An animation with two frames. One shows a pixel art picture of a blue fish with a white background. The second frame is that same fish, but the white background has each contiguous horizontal white line of pixels marked in a different color."](/assets/pixelsorting5.gif)
+
+For instance, if we were to label the horizontal intervals for all the white pixels on the above image with a different color, it would look like this.
 
 ## creating animations using pixel sorting
 !["An animation of some seaweed paper. The animation shows the intervals of the pixel sort getting larger and smaller, looping infintely."](/assets/pixelsorting4.gif)
@@ -49,7 +50,23 @@ do
 	pixel-sorter "seaweed.jpg" -a 90 -u $upper
 done
 ```
-This code uses a for loop to run the pixel sorter with the upper limit of the threshold mask set to 1, 0.9, 0.8...0.3. Then, the frames generated from this for loop can be stitched together into a gif. For combining the frames into a single gif file I used [ezgif](https://ezgif.com/), as it is well, easy.
+This code uses a for loop to run the pixel sorter with the upper limit of the threshold mask set to 1, 0.9, 0.8...0.3. Then, the images generated from this for loop can be stitched together into the frames of a gif. 
+
+The programs I ended up using were primarily [satyarth's pixelsort python module](https://github.com/satyarth/pixelsort/) and [RusticFlare's pixel sort program written in Java](https://github.com/RusticFlare/pixel-sorter). The use of each program is best explained in the documentation, which I've linked.
+
+For combining the frames into a single gif file I used [ezgif](https://ezgif.com/), as it is well, easy. I also made some of the gifs in [ffmpeg](https://ffmpeg.org/), when the file sizes were too large and I didn't want to compress the frames prior to animation.
+
+That's pretty much all there is to it. Making these images was fairly easy as a process but the challenge mostly comes with selecting good images and getting the parameters for the program right to achieve the desired effect.
+
+## other results
+&lt;there will be a gallery of images here and explanations as to how i made them here but im still optimizing the files for better web view&gt;
+
+## closing thoughts
+Image processing takes a lot of time. I hadn't really thought about it at the time, but if I had scaled down my images before applying the sorting filters I could've experimented with the parameters of the programs much more quickly.
+
+Sometime in the future I think it could be fun to try and implement some of these effects on my own. When I was first starting the project, I had the idea to try and implement them in javascript so that they could be accessible through my site, but I never got around to it.
+
+If you have any questions about this project, reach out! I'd be happy to help anyone with their attempts to reproduce this effect.
 
 ## resources
 - acerola’s [video](https://www.youtube.com/watch?v=HMmmBDRy-jE) on pixel sorting as a GPU shader effect
