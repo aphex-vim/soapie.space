@@ -34,12 +34,12 @@ This is an example of a mask, it was created manually using a threshold filter. 
 
 The sorter looks at each column of the image and sorts each **interval** of white pixels. In this context, the intervals are each contiguous group of white pixels along the columns of the image. *Note: Intervals can also be the rows of the image, diagonal lines, or even concentric arcs within the image.*
 
+For instance, if we were to label the horizontal intervals for all the white pixels in an image with a different color, it would look like this:
+
 !["An animation with two frames. One shows a pixel art picture of a blue fish with a white background. The second frame is that same fish, but the white background has each contiguous horizontal white line of pixels marked in a different color."](/assets/pixelsorting5.gif)
 
-For instance, if we were to label the horizontal intervals for all the white pixels on the above image with a different color, it would look like this.
-
 ## creating animations using pixel sorting
-!["An animation of some seaweed paper. The animation shows the intervals of the pixel sort getting larger and smaller, looping infintely."](/assets/pixelsorting4.gif)
+<video controls src="/assets/photo_final1.mp4" muted autoplay loop></video>
 
 To animate the pixel sorting effect, I used some bash scripting to generate multiple frames from the original image, where each frame was generated with slightly different parameters.
 
@@ -59,7 +59,10 @@ For combining the frames into a single gif file I used [ezgif](https://ezgif.com
 That's pretty much all there is to it. Making these images was fairly easy as a process but the challenge mostly comes with selecting good images and getting the parameters for the program right to achieve the desired effect.
 
 ## other results
-&lt;there will be a gallery of images here and explanations as to how i made them here but im still optimizing the files for better web view&gt;
+<video controls src="/assets/photo_final2.mp4" muted autoplay loop></video>
+<video controls src="/assets/photo_final3.mp4" muted autoplay loop></video>
+<video controls src="/assets/photo_final4.mp4" muted autoplay loop></video>
+<video controls src="/assets/photo_final5.mp4" muted autoplay loop></video>
 
 ## closing thoughts
 Image processing takes a lot of time. I hadn't really thought about it at the time, but if I had scaled down my images before applying the sorting filters I could've experimented with the parameters of the programs much more quickly.
