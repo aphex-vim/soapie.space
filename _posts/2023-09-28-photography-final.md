@@ -1,11 +1,11 @@
 ---
 layout: post
 title: using pixel sorting to animate photos
-date: 2023-05-02
+date: 2023-09-28
 tags: photography programming art
 ---
 ## background
-This was my final project for my photography class for the Spring 2023 semester. This post is an adaptation of a presentation that I gave on the work I did for the project. I hope in this format that I can cover things in more depth that I brushed over in the presentation.
+This was my final project for my photography class for the Spring 2023 semester. This post is an adaptation of a presentation that I gave in May on the work I did for the project. I hope in this format that I can cover things in more depth that I brushed over in the presentation.
 
 ## what is pixel sorting?
 !["An image of mountains with a pixel sorting effect applied. The effect is glitchy and produces several gradients along each row of the image."](/assets/pixelsorting0.jpg)
@@ -28,7 +28,7 @@ Although you can't really tell, this is a pixel-sorted picture of my friends dog
 
 !["A black and white image of a beagle sitting on a bed."](/assets/pixelsorting2.jpg)
 
-This is an example of a mask, it was created manually using a threshold filter. Essentially, pixel over a certain brightness has been set to white, and every pixel below a certain brightness has been set to black. The pixel sorter uses this image to determine what parts of the original source image are to be sorted.
+This is an example of a mask, it was created manually using a threshold filter. Essentially, pixels over a certain brightness has been set to white, pixels below a certain brightness has been set to black. The pixel sorter uses this image to determine what parts of the original source image are to be sorted.
 
 !["An image of a black beagle, with a vertical pixel sorting effect applied"](/assets/pixelsorting3.jpg)
 
@@ -41,7 +41,7 @@ For instance, if we were to label the horizontal intervals for all the white pix
 ## creating animations using pixel sorting
 <video controls src="/assets/photo_final1.mp4" muted autoplay loop></video>
 
-To animate the pixel sorting effect, I used some bash scripting to generate multiple frames from the original image, where each frame was generated with slightly different parameters.
+To animate the pixel sorting effect, I used some bash scripting to generate multiple images from one source image, where each output image was generated with slightly different parameters.
 
 Consider this bash script snippet that I used for this animation:
 ```bash
@@ -50,7 +50,7 @@ do
 	pixel-sorter "seaweed.jpg" -a 90 -u $upper
 done
 ```
-This code uses a for loop to run the pixel sorter with the upper limit of the threshold mask set to 1, 0.9, 0.8...0.3. Then, the images generated from this for loop can be stitched together into the frames of a gif. 
+This code uses a for loop to run the pixel sorter with the upper limit of the threshold mask set to 1, 0.9, 0.8...0.3. Then, the images generated from this loop can be stitched together into the frames of a gif. 
 
 The programs I ended up using were primarily [satyarth's pixelsort python module](https://github.com/satyarth/pixelsort/) and [RusticFlare's pixel sort program written in Java](https://github.com/RusticFlare/pixel-sorter). The use of each program is best explained in the documentation, which I've linked.
 
