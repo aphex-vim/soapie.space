@@ -11,6 +11,10 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: true
+
+# adding feed plugin for rss feed at /feed.xml
+plugins:
+  - jekyll-feed
   
 
 # site globals
