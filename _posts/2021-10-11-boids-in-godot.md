@@ -21,4 +21,4 @@ I looked at a few resources for this project, here they are.
 - [Nad Labs Boids in Godot](https://www.youtube.com/watch?v=oFnIlNW_p10)
 
 ## view the code on github
-You can view the code for this project in its repository on github, [here](https://github.com/spencer-maaaaan/boids).
+You can view the code for this project in its repository on github, [here](https://github.com/aphex-vim/boids).

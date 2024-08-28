@@ -57,7 +57,7 @@ A pretty common mistake for beginners, a knuckle ball is exactly what it sounds 
 ## shutouts
 all shutouts (games that end 11-0) are recorded here
 
-- Tony beat Spencer in a shutout on March 22, 2021.
+- Tony beat ~~Spencer~~ in a shutout on March 22, 2021.
 
 - Tony beat Ory in a shutout on March 23, 2021.
 

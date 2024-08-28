@@ -20,4 +20,4 @@ Right now, this is all the bot is capable of outputting, but I'd like to get it 
     - top emoji for a particular time-frame
 
 ## view the code on github
-You can view the code for this project in its repository on github, [here](https://github.com/spencer-maaaaan/emoji-stats).
+You can view the code for this project in its repository on github, [here](https://github.com/aphex-vim/emoji-stats).
