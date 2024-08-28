@@ -18,4 +18,4 @@ I read a lot for this project, here's a short list of links that I found particu
 - [This matplotlib tutorial which also plots a Barnsley fern](https://scipython.com/book/chapter-7-matplotlib/examples/the-barnsley-fern/)
 
 ## view the code on github
-You can view the code for this project in its repository on github, [here](https://github.com/spencer-maaaaan/barnsley_fern).
+You can view the code for this project in its repository on github, [here](https://github.com/aphex-vim/barnsley_fern).
