@@ -8,7 +8,7 @@ I saw an interesting post on [/r/factorio](https://www.reddit.com/r/factorio/com
 
 Seeing that it could be achieved in Factorio's circuit system, I thought it wouldn't be too hard to try and render a Barnsley Fern in python's popular plotting library, matplotlib. These are the results of those efforts.
 
-<img title="barnsley animation" alt="an animation of a barnsley fern growing" src="https://speen.space/assets/fern.gif" width=300>
+<img title="barnsley animation" alt="an animation of a barnsley fern growing" src="/assets/fern.gif" width=300>
 
 ## more info
 I read a lot for this project, here's a short list of links that I found particularly useful.
