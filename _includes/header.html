@@ -1,9 +1,17 @@
 <header>
-    <h1>
-        {% if page.alt-header %}
-            {{ page.alt-header }}
-        {% else %}
-            speen's space
-        {% endif %}
-    </h1>
+    <div>
+        <h1>
+            {% if page.alt-header %}
+                {{ page.alt-header }}
+            {% else %}
+                soapie's space
+            {% endif %}
+        </h1>
+        <nav>
+            <a href="/">home</a> |
+            <a href="/contact">contact</a> |
+            <a href="/friends">friends</a> |
+            <a href="{{ site.github }}">github</a>
+        </nav>
+    </div>
 </header>

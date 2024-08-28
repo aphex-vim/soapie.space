@@ -5,11 +5,11 @@ alt-header: ping's pong
 ---
 
 <style>
-    header{
+    header {
         background-image: url("/assets/pong.gif");
         background-size: cover;
     }
-    h1.banner_header {
+    h1 {
         color: white;
     }
 </style>

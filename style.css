@@ -1,36 +1,69 @@
 :root {
- --main-bg-color: lightblue;
- --accent-bg-color: lightcyan;
+    --main-bg-color: lightblue;
+    --accent-bg-color: lightcyan;
+}
+
+@keyframes bgsway {
+    0%      {background-position: 0em 0em;}
+    100%    {background-position: 32em 0em}
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--main-bg-color);
-    max-width: 50em;
+    background-image: url("/assets/caustics.png");
+    background-size: 32em;
+    background-repeat: repeat;
+    animation: bgsway 10s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
     margin: auto;
     line-height: 2.5cap;
 }
 
 body > * {
     background-color: var(--accent-bg-color);
-    max-width: inherit;
-    margin: 1em;
+    max-width: 50em;
+    margin: 1em auto 1em auto;
     padding: 1em;
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
 
-header, nav, footer {
+header, footer {
     text-align: center;
 }
 
 header {
-    background-color: var(--accent-bg-color);
     font-style: italic;
+    display: flex;
     background-image: url("/assets/banner.png");
     background-position: center bottom;
     background-repeat: no-repeat;
 }
+
+header > * {
+    background-color: transparent;
+    margin: 0em auto 0em auto;
+}
+
+header > div {
+    flex-grow: 1;
+    align-content: center;
+    justify-content: center;
+}
+
+header > div > nav {
+    background-color: var(--main-bg-color);
+    margin: auto;
+    max-width: fit-content;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+header > img {
+    max-width: 8em;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+    
 
 ul {
     list-style-type: square;
