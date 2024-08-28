@@ -45,6 +45,12 @@ header > * {
     margin: 0em auto 0em auto;
 }
 
+header > img {
+	max-width: 8em;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
 header > div {
     flex-grow: 1;
     align-content: center;
