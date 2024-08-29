@@ -80,6 +80,13 @@ img, video {
     border-width: .25em;
 }
 
+/* mobile header */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column-reverse;
+    }
+}
+
 /* blog listing stuff */
 ul.blog {
     list-style-type: none;
