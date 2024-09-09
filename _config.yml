@@ -19,15 +19,14 @@ plugins:
 
 # site globals
 title: soapie's space
-description: soapie's collection of cool projects
+description: soapie's lil spot on the internet
 
 # contact/socials
-email: spencer.d.tenney@gmail.com
 fediverse: https://types.pl/@speen
 github: https://github.com/aphex-vim
 tumblr: https://www.tumblr.com/blog/vim-artisan
 youtube: https://www.youtube.com/@predatoru
-discord: spnce
+discord: https://discordapp.com/users/175350683380350976
 matrix: speen:matrix.org
 
 # enable display of blog collection pages
@@ -53,3 +52,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - generate_tags.sh
+  - new_draft.sh

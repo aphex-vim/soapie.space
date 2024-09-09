@@ -2,9 +2,8 @@
 layout: page
 ---
 ## contact me
-- discord: <span title="formerly spence#6125" style="text-decoration: underline dotted">{{ site.discord }}</span>
+- discord: [shoes]({{ site.discord }})
 - matrix: {{ site.matrix }}
-- email: {{ site.email }}
 
 ## socials
 - fediverse: [@speen@types.pl]({{ site.fediverse }})
