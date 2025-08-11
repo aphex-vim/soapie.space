@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div>
+            <h2>posts tagged "{{ page.tag-name }}"</h2>
+            <ul class="blog-feed">
+            {% assign blog = site.posts | sort: "date" | reverse %}
+            {% for post in blog %}
+            {% if post.tags contains page.tag-name %}
+                {% include post.html %}
+            {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

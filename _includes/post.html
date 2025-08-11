@@ -1,0 +1,8 @@
+<li class="blog-post">
+    <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+    <div class="byline">
+        <date datetime="{{ post.date }}">{{ post.date | date:"%B %e, %Y" }}</date>
+        {% if post.updated %}<date datetime="{{ post.updated }}"> (updated {{ post.updated | date:"%B %e, %Y" }})</date>{% endif %}
+        {% if post.tags[0] %} · {% assign tags = post.tags | sort %}{% for tag in tags %} <a href="/tagged/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}{% endif %}
+    </div>
+</li>

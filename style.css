@@ -1,0 +1,191 @@
+:root {
+    /* color scheme */
+    --page-background:    darkslateblue;
+    --content-background: #23071ee8;
+    --media-border:       firebrick;
+    --primary-text:       wheat;
+    --link-unvisited:     mediumspringgreen;
+    --link-visited:       firebrick;
+    --link-hover:         khaki;
+    --link-active:        wheat;
+}
+
+@keyframes bgsway {
+    0%      {background-position: 0em 0em;}
+    100%    {background-position: 32em 0em}
+}
+
+/* text styling */
+p, h1, h2, h3, ul, .byline {
+    color: var(--primary-text);
+}
+
+/* link styling */
+a:link,
+.post-title:link {
+    color: var(--link-unvisited);
+}
+
+a:visited,
+.post-title:visited  {
+    color: var(--link-visited);
+}
+
+a:active,
+.post-title:active {
+    color: var(--link-active);
+}
+
+a:hover,
+.post-title:hover {
+    color: var(--link-hover);
+}
+
+/* media styling */
+img, video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 80%;
+    border-color: var(--media-border);
+    border-style: outset;
+    border-width: .25em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--page-background);
+    background-image: url("/assets/caustics.png");
+    background-size: 32em;
+    background-repeat: repeat;
+    animation: bgsway 10s cubic-bezier(.45,0,.55,1) 0s infinite alternate;
+    margin: auto;
+    line-height: 2.5cap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    } 
+}
+
+body > * {
+    background-color: var(--content-background);
+    color: var(--primary-text);
+    max-width: 50em;
+    margin: 1em auto;
+    padding: 1.5rem;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column reverse;
+    background-color: var(--content-background);
+    background-image: url("/assets/banner.png");
+    background-position: left;
+}
+
+header > * {
+    padding: 0;
+    margin: 1em 0 1em auto;
+}
+
+header img {
+    max-width: 8rem;
+    max-height: 8rem;
+    aspect-ratio 1/1;
+}
+
+header div {
+    background-color: var(--content-background);
+    align-content: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 1em 1em;
+}
+
+nav, header h1 {
+    margin: 0, auto, 0, auto;
+    max-width: fit-content;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header hr {
+    border: none;
+    background-color: var(--primary-text);
+    margin-bottom: 0;
+    height: .15rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    image-rendering: pixelated;
+    justify-content: center;
+}
+
+/* badges */
+footer img, footer a {
+    border: none;
+    padding: none;
+    margin: 0px 4px 4px 0px;
+    max-width: 88px;
+    max-height: 31px;
+}
+
+/* mobile header */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column-reverse;
+    }
+}
+
+/* blog listing stuff */
+ul.blog-feed {
+    padding: 0;
+    list-style-type: none;
+}
+
+li.blog-post {
+    /* background-color: #d8d8d880; */
+    padding: .25em .25em .5em .25em;
+    margin: .25em 0 0 0;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.byline {
+    font-size: 0.75em;
+}
+
+/* styles for syntax highlighted code snippets */
+pre.highlight {
+    padding: 1em;
+    overflow: auto;
+}
+
+pre {
+    tab-size: 4;
+}
+
+table.rouge-table {
+    line-height: 2cap;
+}

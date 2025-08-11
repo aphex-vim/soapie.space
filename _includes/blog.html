@@ -1,0 +1,9 @@
+<div>
+    <h2>blog</h2>
+    <ul class="blog-feed">
+    {% assign blog = site.posts | sort: "date" | reverse %}
+    {% for post in blog %}
+        {% include post.html %}
+    {% endfor %}
+    </ul>
+</div>

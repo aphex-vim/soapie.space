@@ -1,0 +1,52 @@
+# github page's configuration
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# adding feed plugin for rss feed at /feed.xml
+plugins:
+  - jekyll-feed
+  
+
+# site globals
+title: soapie's space
+description: soapie's lil spot on the internet
+
+# contact/socials
+fediverse: https://types.pl/@speen
+github: https://github.com/aphex-vim
+tumblr: https://www.tumblr.com/blog/vim-artisan
+youtube: https://www.youtube.com/@notspareshoes
+discord: https://discordapp.com/users/175350683380350976
+
+# enable display of blog collection pages
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+  tags:
+    output: true
+    permalink: tagged/:path
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
