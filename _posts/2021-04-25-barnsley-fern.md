@@ -2,7 +2,7 @@
 layout: post
 title: a barnsley fern rendered in python's matplotlib
 date: 2021-04-25
-tags: math programming visualizations
+tags: math programming graphics
 ---
 I saw an interesting post on [/r/factorio](https://www.reddit.com/r/factorio/comments/mumy5x/growing_the_barnsley_fern_in_factorio/) where a user had made a display out of lamps, and used them to plot a Barnsley fern.
 

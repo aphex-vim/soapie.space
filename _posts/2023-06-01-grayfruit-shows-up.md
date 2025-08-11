@@ -2,7 +2,7 @@
 layout: post
 title: when does grayfruit show up to stream?
 date: 2023-06-01
-tags: programming data
+tags: programming graphics data
 ---
 ## background
 I like to watch a streamer called grayfruit, they are pretty chill and have good taste in games. All of his streams start with a piece of fanart and some music playing while he gets ready. I watch most of grayfruit's streams on his [vod channel](https://www.youtube.com/@fruitsalad5802), and it is customary for someone to post a funny comment that has timestamps to when grayfruit arrives/when the gameplay for the stream starts.
