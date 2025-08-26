@@ -16,17 +16,9 @@ kramdown:
 plugins:
   - jekyll-feed
   
-
 # site globals
 title: soapie's space
 description: soapie's lil spot on the internet
-
-# contact/socials
-fediverse: https://types.pl/@speen
-github: https://github.com/aphex-vim
-tumblr: https://www.tumblr.com/blog/vim-artisan
-youtube: https://www.youtube.com/@notspareshoes
-discord: https://discordapp.com/users/175350683380350976
 
 # enable display of blog collection pages
 collections:
