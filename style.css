@@ -1,7 +1,7 @@
 :root {
     /* color scheme */
     --page-background:    darkslateblue;
-    --content-background: #23071ee8;
+    --content-background: #23071ef5;
     --media-border:       firebrick;
     --primary-text:       wheat;
     --link-unvisited:     mediumspringgreen;
@@ -112,11 +112,11 @@ header div {
     justify-content: center;
     font-style: italic;
     font-weight: bolder;
-    padding: 1em 1em;
+    padding: 1em;
 }
 
 header h1 {
-    margin: 0 auto;
+    margin: auto 1em;
 }
 
 header hr {
