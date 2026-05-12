@@ -1,18 +1,33 @@
 :root {
-    /* color scheme */
+    /* high-contrast */
     --page-background:    darkslateblue;
-    --content-background: #23071ef5;
+    --content-background: #23071e;
     --media-border:       firebrick;
     --primary-text:       wheat;
     --link-unvisited:     mediumspringgreen;
     --link-visited:       firebrick;
     --link-hover:         khaki;
     --link-active:        wheat;
+    /* classic beach */
+    --page-background:    lightblue;
+    --content-background: lightcyan;
+    --media-border:       darkslateblue;
+    --primary-text:       darkslateblue;
+    --link-unvisited:     mediumseagreen;
+    --link-visited:       firebrick;
+    --link-hover:         khaki;
+    --link-active:        wheat;
 }
 
 @keyframes bgsway {
-    0%      {background-position: 0em 0em;}
-    100%    {background-position: 32em 0em}
+    0%      {background-position: 0em 0em}
+    100%    {background-position: 8em 0em}
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    } 
 }
 
 /* text styling */
@@ -62,17 +77,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--page-background);
     background-image: url("/assets/caustics.png");
-    background-size: 32em;
+    background-size: 8em;
     background-repeat: repeat;
     animation: bgsway 10s cubic-bezier(.45,0,.55,1) 0s infinite alternate;
     margin: auto;
     line-height: 2.5cap;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    body {
-        animation: none;
-    } 
 }
 
 body > * {
@@ -89,10 +98,10 @@ header, footer {
 
 header {
     display: flex;
-    flex-direction: column reverse;
     background-color: var(--content-background);
     background-image: url("/assets/banner.png");
-    background-position: left;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 header > * {
@@ -107,16 +116,14 @@ header img {
 }
 
 header div {
-    background-color: var(--content-background);
     align-content: center;
     justify-content: center;
     font-style: italic;
     font-weight: bolder;
-    padding: 1em;
 }
 
 header h1 {
-    margin: auto 1em;
+    margin: auto 0.1rem;
 }
 
 header hr {
